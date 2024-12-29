@@ -58,11 +58,10 @@ preset = 'qwerty'
 
 [workspace-to-monitor-force-assignment]
 1 = 1                            # Monitor sequence number from left to right. 1-based indexing
-A = 'main'                       # Laptop screen
-B = 'secondary'                  # External monitor
-C = 'secondary'
-V = 'secondary'
-T = 'secondary'
+A = 'main'                       # AI (Claude)
+B = 'secondary'                  # Browser
+C = 'secondary'                  # Code (VSCode)
+T = 'secondary'                  # Terminal
 
 
 [gaps]
