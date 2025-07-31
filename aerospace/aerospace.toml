@@ -58,7 +58,7 @@ preset = 'qwerty'
 
 [workspace-to-monitor-force-assignment]
 1 = 1                            # Monitor sequence number from left to right. 1-based indexing
-A = 'main'                       # AI (Claude)
+# A = 'main'                       # AI (Claude)
 W = 'secondary'                  # Web (browser)
 C = 'secondary'                  # Code (VSCode)
 T = 'secondary'                  # Terminal
