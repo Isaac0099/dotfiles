@@ -102,7 +102,7 @@ eval "$(uv generate-shell-completion zsh)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim"
+alias zshconfig="nvim ~/.zshrc"
 alias fzfp='fzf --preview="bat --color=always {}"'
 alias fzfc='code $(fzf --preview="bat --color=always {}")'
 alias python=python3
@@ -112,8 +112,10 @@ alias ga="git add ."
 alias gcmsg="git commit --message"
 alias gp="git push --set-upstream origin $(git_current_branch)"
 alias gst="git status"
-alias gs="git switch"
-alias gsc="git switch -c"
+alias gsw="git switch"
+alias gswc="git switch -c"
+alias gs="git stash"
+alias gsp="gist stash pop"
 ##
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
