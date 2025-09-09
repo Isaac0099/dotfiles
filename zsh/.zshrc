@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions you-should-use)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,6 +108,12 @@ alias fzfc='code $(fzf --preview="bat --color=always {}")'
 alias python=python3
 alias shadcn="pnpm dlx shadcn@latest add"
 alias ask="/Users/isaacchamberlain/workspace/Personal/evil-twin/ask.sh"
+alias ga="git add ."
+alias gcmsg="git commit --message"
+alias gp="git push --set-upstream origin $(git_current_branch)"
+alias gst="git status"
+alias gs="git switch"
+alias gsc="git switch -c"
 ##
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
