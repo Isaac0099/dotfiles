@@ -105,23 +105,21 @@ eval "$(uv generate-shell-completion zsh)"
 alias zshconfig="nvim ~/.zshrc"
 alias fzfp='fzf --preview="bat --color=always {}"'
 alias fzfc='code $(fzf --preview="bat --color=always {}")'
-alias python=python3
 alias shadcn="pnpm dlx shadcn@latest add"
-alias ask="/Users/isaacchamberlain/workspace/Personal/evil-twin/ask.sh"
-alias ga="git add ."
-alias gcmsg="git commit --message"
+alias ask="$HOME/workspace/Personal/evil-twin/ask.sh"
 alias gp="git push --set-upstream origin $(git_current_branch)"
 alias gst="git status"
 alias gsw="git switch"
 alias gswc="git switch -c"
 alias gs="git stash"
 alias gsp="gist stash pop"
+alias gac="git add . && git commit -m"
 ##
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # pnpm
-export PNPM_HOME="/Users/isaacchamberlain/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -136,7 +134,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.local/bin:$HOME/anaconda3/condabin:$HOME/opt/homebrew/bin:$HOME/go/bin:$PATH"
 
 # Added by Windsurf
-export PATH="/Users/isaacchamberlain/.codeium/windsurf/bin:$PATH"
+export PATH="$HOME/.codeium/windsurf/bin:$PATH"
 
 # adding risc-v toolchain to path
 PATH=$PATH:/usr/local/opt/riscv-gnu-toolchain/bin
