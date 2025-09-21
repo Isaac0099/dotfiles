@@ -1,0 +1,21 @@
+{
+  "settingsVersion": "2.3",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https?://mail.google.com/*"
+    },
+    {
+      "passKeys": "/kjl><",
+      "pattern": "https?://www.youtube.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://x.com/*"
+    },
+    {
+      "passKeys": "/",
+      "pattern": "https?://github.com/*"
+    }
+  ]
+}
